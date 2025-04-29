@@ -1,0 +1,27 @@
+.resume-container {
+    background-color: #0b0c10;
+    color: #fff;
+    padding: 50px 20px;
+  }
+  
+  .resume-title {
+    color: #00b4d8;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .resume-item {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    line-height: 1.6;
+  }
+  
+  .resume-section {
+    margin-bottom: 50px;
+    align-items: center;
+  }
+  
+  .resume-icon {
+    text-align: center;
+  }
+  
