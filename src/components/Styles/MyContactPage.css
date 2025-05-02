@@ -1,0 +1,92 @@
+.mycontact-container {
+  width: 100%;
+  height: auto;
+  font-family: Poppins, sans-serif;
+  background: linear-gradient(to top,
+  rgb(3, 31, 153) 30%,
+      rgb(5, 132, 167) 70%,
+      rgb(4, 22, 102) 90%,
+      rgb(61, 44, 1) 100%);
+}
+
+.form-input {
+  background: transparent;
+  color: #ffffff;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+
+.form-input1 {
+  background: transparent;
+  color: #ffffff;
+}
+
+.form-input:hover,
+.form-input1:hover {
+  background: transparent;
+  color: #ffffff;
+}
+
+.form-input:focus,
+.form-input1:focus {
+  background: transparent;
+  color: #ffffff;
+  box-shadow: none;
+  outline: none;
+  border-bottom: 1px solid #ffffff;
+}
+.form-input1:focus{
+  border: 1px solid #ffffff;
+}
+.form-input::placeholder, .form-input1::placeholder{
+  color: #ffffff;
+  opacity: 0.5;
+}
+.form-input:focus .form-input::placeholder{
+  transform: translateY(-10px);
+}
+.send-button{
+background: transparent;
+position: relative;
+display: inline-block;
+overflow: hidden;
+border: 2px solid #fee440;
+transition: color 0.5s ease;
+z-index: 1;
+color: #fee440;
+padding: 10px 30px;
+font-weight: 600;
+letter-spacing: 1px;
+transition: 0.3s ease-in-out;
+border-radius: 30px;
+}
+.send-button::before{
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 100%;
+  background: linear-gradient(to right, #fee440, #fee440);
+  left: 0;
+  top: 0;
+  z-index: -1;
+  color: #000;
+  transition: width 500ms ease;
+}
+.send-button:hover::before{
+  width: 100%;
+}
+.send-button:hover{
+  color: #000;
+  border: 2px solid #fee440;
+  box-shadow: 0 0 10px #fee440, 0 0 40px #fee4404d, 0 0 80px #fee44033;
+}
+.linkedin-icon, .github-icon{
+  color: #fee440;
+  transition: transform 0.3s ease, color 0.5s ease;
+}
+.linkedin-icon:hover, .github-icon:hover{
+  color: #ffdd02;
+  transform: scale(1.07);
+} 
+ 

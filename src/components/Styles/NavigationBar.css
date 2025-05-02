@@ -44,8 +44,11 @@
 }
 .center-img{
     border-radius: 50px;
-    box-shadow: 0 0 5px 10px #c506eb;
-}
+    /* border: 2px solid #c506eb;
+    box-shadow: 0 0 10px #d332f3, 0 0 40px #d759f1c5, 0 0 80px #da4cf7de; */
+    border: 2px solid #0662eb;
+    box-shadow: 0 0 30px #0662eb, 0 0 70px #da4cf7de, 0 0 80px #da4cf7de;
+ }
 
 .custom-nav-items {
     width: 100%;

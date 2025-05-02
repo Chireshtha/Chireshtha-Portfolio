@@ -29,7 +29,7 @@ const AboutMePage = () => {
             </div>
             <div className='roadmap-item-4'>
             <strong>2023 – 2024</strong> 
-            Completed Full Stack Development Course & job searching
+            Completed Full Stack Development Courses & job searching
             </div>
             <div className='roadmap-item-5'>
             <strong>2024 – Present</strong> 

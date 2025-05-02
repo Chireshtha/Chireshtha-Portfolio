@@ -1,27 +1,146 @@
 .resume-container {
-    background-color: #0b0c10;
-    color: #fff;
-    padding: 50px 20px;
+  width: 100%;
+  height: auto;
+  font-family: Poppins, sans-serif;
+  background: linear-gradient(to top,
+      rgb(61, 44, 1) 10%,
+      rgb(2, 53, 7) 20%,
+      rgb(1, 38, 53) 100%);
+  position: relative;
+}
+.tree-img, .tree-img1, .tree-img2, .bird-img{
+  position: absolute;
+}
+.tree-img {
+  bottom: 0;
+  left: 0;
+}
+
+.tree-img1 {
+  bottom: 0;
+  right: 6%;
+}
+
+.tree-img2 {
+  bottom: 49.5%;
+  right: 12%;
+  transition: transform 0.3s ease-in-out;
+}
+.tree-img2:hover{
+  transform: translateY(-20px);
+}
+ 
+.bird-img {
+  top: 60%;
+  left: 15%;
+}
+.main-text, .main-text-1{
+  font-weight: bold;
+  text-align: justify;
+}
+.main-text{
+  margin-bottom: 170px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #ffffff;
+}
+.main-text-1{
+  background: linear-gradient(300deg,  #ba06f1, #068b94, #04cb6b, #ffffff, #dd0469);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  margin-bottom: 300px;
+}
+
+.download-btn {
+  border-radius: 30px;
+  background: transparent !important;
+  display: inline-block;
+  position: absolute;
+  overflow: hidden;
+  cursor: pointer;
+  top: 50%;
+  right: 9%;
+  border: 2px solid #ccff00;
+  padding: 10px 30px;
+  transition: color 0.6s ease !important;
+  z-index: 1;
+}
+.download-btn::before{
+  content: '';
+  position: absolute;
+  width: 0;
+  background: linear-gradient(300deg,  #ccff00, #068b94, #ccff00, #dd0469);
+  height: 100%;
+  left: 0;
+  top: 0;
+  transition: width 500ms ease-in;
+  z-index: -1;
+  color: #ffffff;
+}
+.download-btn:hover::before{
+  width: 100%;
+}
+.download-btn:hover{
+  color: #ffffff;
+  background-color: transparent;
+  border: 2px solid #ccff00;
+  box-shadow: 0 0 10px #ccff00, 0 0 40px #ccff00b7, 0 0 80px #ccff00c1;
+}
+
+.non-it-text,
+.full-stack-text,
+.oppotunity-text {
+  position: absolute;
+  font-weight: bold;
+  /* background: #ffffff; */
+  background: linear-gradient(90deg, #068b94, #04cb6b, #b19f02);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  -webkit-text-stroke: 3px;
+  text-shadow: none;
+}
+
+.non-it-text {
+  top: 21%;
+  left: 37%;
+  width: 150px;
+  height: 50px;
+  background-color: #ba06f1;
+  font-size: 29px;
+}
+
+.full-stack-text {
+  top: 20.5%;
+  left: 53.5%;
+  width: 250px;
+  height: 100px;
+  font-size: 23px;
+}
+
+.oppotunity-text {
+  top: 70%;
+  left: 52.5%;
+  width: 290px;
+  height: 100px;
+  font-size: 21px;
+}
+@media (max-width: 768px){
+  .tree-img, .tree-img1, .tree-img2, .bird-img, .non-it-text, .full-stack-text, .oppotunity-text{
+    display: none;
   }
-  
-  .resume-title {
-    color: #00b4d8;
-    font-weight: bold;
-    margin-bottom: 15px;
+  .resume-img{
+    margin-top: -60%; 
   }
-  
-  .resume-item {
-    font-size: 1.1rem;
-    margin-bottom: 10px;
-    line-height: 1.6;
+  .main-text, .main-text-1{
+    padding: 0 !important;
   }
-  
-  .resume-section {
-    margin-bottom: 50px;
-    align-items: center;
+  .download-btn{
+    position: static;
+    margin: -1rem auto;
+    display: block;
+    margin-top: -60%; 
   }
-  
-  .resume-icon {
-    text-align: center;
-  }
-  
+
+}
