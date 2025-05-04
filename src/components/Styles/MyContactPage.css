@@ -3,9 +3,9 @@
   height: auto;
   font-family: Poppins, sans-serif;
   background: linear-gradient(to top,
-  rgb(3, 31, 153) 30%,
-      rgb(5, 132, 167) 70%,
-      rgb(4, 22, 102) 90%,
+  rgb(2, 13, 62) 30%,
+      rgb(3, 86, 109) 70%,
+      rgb(1, 42, 76) 90%,
       rgb(61, 44, 1) 100%);
 }
 
@@ -15,6 +15,7 @@
   border-top: none;
   border-right: none;
   border-left: none;
+  position: relative;
 }
 
 .form-input1 {
@@ -89,4 +90,12 @@ border-radius: 30px;
   color: #ffdd02;
   transform: scale(1.07);
 } 
- 
+
+.name-error, .email-error{
+  position: absolute;
+  margin-top: -2.5%;
+}
+.subject-error{
+  position: absolute;
+  margin-top: 5px;
+}
