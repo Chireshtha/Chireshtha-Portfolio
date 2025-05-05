@@ -76,6 +76,8 @@ border-radius: 30px;
 }
 .send-button:hover::before{
   width: 100%;
+  max-width: 200px;
+  text-align: center;
 }
 .send-button:hover{
   color: #000;
@@ -98,4 +100,18 @@ border-radius: 30px;
 .subject-error{
   position: absolute;
   margin-top: 5px;
+}
+.cartoon-left, .fish-right{
+  animation: flyAnimation 3s ease-in-out infinite;
+}
+@keyframes flyAnimation{
+  0%{
+    transform: translateY(0px) rotate(0deg);
+  }
+  50%{
+    transform: translateY(-10px) rotate(2deg);
+  }
+  100%{
+    transform: translateY(0px) rotate(0deg);
+  }
 }

@@ -16,7 +16,7 @@ const MyContactPage = () => {
 
   const [loading, setLoading] = useState(false);
   const [errors, setErrors] = useState({})
-  
+
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -60,7 +60,7 @@ const MyContactPage = () => {
           </div>
 
           <Col md={2} >
-            <img src={leftimg} alt='cartoon left' className='img-fluid' width={'150px'} height={'150px'} />
+            <img src={leftimg} alt='cartoon left' className='img-fluid cartoon-left' width={'150px'} height={'150px'} />
           </Col>
 
           <Col md={4} >
@@ -90,15 +90,18 @@ const MyContactPage = () => {
           </Col>
 
           <Col md={2}>
-            <img src={rightimg} alt='fish right' className='img-fluid' width={'120px'} height={'120px'} />
+            <img src={rightimg} alt='fish right' className='img-fluid fish-right' width={'120px'} height={'120px'} />
           </Col>
         </Row>
 
         <Row className='text-center py-5 d-flex justify-content-center align-items-center'>
           <Col md={3} >
-          <button type='submit' className='btn btn-lg px-5 send-button' disabled={loading}>
-            {loading ? <Spinner animation='border' size='sm' /> : 'Send'}
-          </button>
+            <button type='submit' className='btn btn-lg px-5 send-button' disabled={loading}>
+              {loading ? (<div className='d-flex justify-content-center align-items-center w-100'><Spinner animation='border' size='lg' /></div>)
+                : (
+                  'Send'
+                )}
+            </button>
           </Col>
         </Row>
       </Form>
