@@ -103,28 +103,28 @@
 }
 
 .non-it-text {
-  top: 21%;
+  top: 17%;
   left: 37%;
   width: 150px;
   height: 50px;
   background-color: #ba06f1;
-  font-size: 29px;
+  font-size: 25px;
 }
 
 .full-stack-text {
-  top: 20.5%;
+  top: 17%;
   left: 53.5%;
   width: 250px;
   height: 100px;
-  font-size: 23px;
+  font-size: 25px;
 }
 
 .oppotunity-text {
-  top: 70%;
+  top: 75%;
   left: 52.5%;
   width: 290px;
   height: 100px;
-  font-size: 21px;
+  font-size: 25px;
 }
 @media (max-width: 768px){
   .tree-img, .tree-img1, .tree-img2, .bird-img, .non-it-text, .full-stack-text, .oppotunity-text{
