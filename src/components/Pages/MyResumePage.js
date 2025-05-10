@@ -25,7 +25,7 @@ const MyResumePage = () => {
           <div className='px-5'>
           <p className='main-text-1 fs-5'>You can view my resume <br/> <span className='fs-2'>Click Here!</span></p>
           </div>
-          <a href='https://drive.google.com/file/d/1NTsNgZPaZ75N3Y1fUlVZz3RLvAkbFLMJ/view?usp=sharing' target='_blank' rel='noopener noreferrer' className='text-decoration-none'><Button className='btn btn-lg download-btn'>Download</Button></a>
+          <a href='https://drive.google.com/file/d/1x5pJA9YIFvIXxgiauTdfEkwD3J-7kAJD/view?usp=sharing' target='_blank' rel='noopener noreferrer' className='text-decoration-none'><Button className='btn btn-lg download-btn'>Download</Button></a>
           <img src={tree} alt='tree right' className='img-fluid tree-img1' width={'200px'} height={'100px'} />
           <img src={birdanimation} alt='Bird right' className='img-fluid tree-img2' width={'75px'} height={'75px'} />
         </Col>
