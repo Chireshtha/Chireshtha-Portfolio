@@ -22,7 +22,7 @@ const projectData = [
                 "icon": "SiMongodb" 
             }
         ],
-        "demo": "https://chireshtha.github.io/Company-Website-Frontend/"
+        "demo": "https://chireshtha-brighture-innovation.netlify.app/"
 
     },
     {
